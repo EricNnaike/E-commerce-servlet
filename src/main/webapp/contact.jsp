@@ -44,7 +44,7 @@
                            </ul>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="product.jsp">Products</a>
+                           <a class="nav-link" href="productH.jsp">Products</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="blog_list.jsp">Blog</a>

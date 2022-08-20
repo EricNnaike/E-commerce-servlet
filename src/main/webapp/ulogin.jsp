@@ -47,12 +47,12 @@
                                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
 
                                     <div class="form-outline mb-4">
-                                        <input type="name" id="form2Example17" class="form-control form-control-lg" name="uname" />
-                                        <label class="form-label" for="form2Example17">Username</label>
+                                        <input type="email" id="form2Example17" class="form-control form-control-lg" name="email" />
+                                        <label class="form-label" for="form2Example17">Email</label>
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form2Example27" class="form-control form-control-lg" name="pass" />
+                                        <input type="password" id="form2Example27" class="form-control form-control-lg" name="password" />
                                         <label class="form-label" for="form2Example27">Password</label>
                                     </div>
 
@@ -63,6 +63,7 @@
                                     <a class="small text-muted" href="#!">Forgot password?</a>
                                     <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="signup.jsp"
                                                                                                               style="color: #393f81;">Register here</a></p>
+                                    <p class=" pb-lg-2" style="color: #393f81;"><a href="signin.jsp" style="color: #393f81;">Admin</a></p>
                                     <a href="#!" class="small text-muted">Terms of use.</a>
                                     <a href="#!" class="small text-muted">Privacy policy</a>
                                 </form>

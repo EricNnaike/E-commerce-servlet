@@ -26,7 +26,7 @@
       response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
 
       //Validate login page before accessing product.jsp page
-      if (session.getAttribute("username") == null) {
+      if (session.getAttribute("email") == null) {
          response.sendRedirect("ulogin.jsp");
       }
    %>

@@ -55,29 +55,25 @@
                                         <label class="form-label" for="emai">Email</label>
                                     </div>
                                     <div class="form-outline mb-4">
-                                        <input type="number" id="num" class="form-control form-control-lg" name="phone" />
-                                        <label class="form-label" for="num">Phone number</label>
+                                        <input type="password" id="num" class="form-control form-control-lg" name="password" />
+                                        <label class="form-label" for="num">Password</label>
                                     </div>
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form2Example27" class="form-control form-control-lg" name="pass" />
-                                        <label class="form-label" for="form2Example27">Password</label>
+                                        <input type="number" id="form2Example27" class="form-control form-control-lg" name="mobile" />
+                                        <label class="form-label" for="form2Example27">Mobile</label>
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input type="name" id="ad" class="form-control form-control-lg" name="address" />
-                                        <label class="form-label" for="ad">Address</label>
+                                        <input type="name" id="ad" class="form-control form-control-lg" name="gender" />
+                                        <label class="form-label" for="ad">Gender</label>
                                     </div>
                                     <div class="form-outline mb-4">
-                                        <input type="name" id="city" class="form-control form-control-lg" name="city" />
-                                        <label class="form-label" for="city">City</label>
+                                        <input type="name" id="city" class="form-control form-control-lg" name="address" />
+                                        <label class="form-label" for="city">Address</label>
                                     </div>
                                     <div class="form-outline mb-4">
-                                        <input type="name" id="state" class="form-control form-control-lg" name="state" />
-                                        <label class="form-label" for="city">State</label>
-                                    </div>
-                                    <div class="form-outline mb-4">
-                                        <input type="name" id="cou" class="form-control form-control-lg" name="country" />
-                                        <label class="form-label" for="cou">Country</label>
+                                        <input type="name" id="state" class="form-control form-control-lg" name="pincode" />
+                                        <label class="form-label" for="city">Pincode</label>
                                     </div>
 
                                     <div class="pt-1 mb-4">

@@ -1,36 +1,33 @@
 package dao;
 
+
+import model.User;
+import util.DatabaseConnection;
+
 import java.sql.*;
 
+
 public class LoginDao {
-    String sql = "SELECT * FROM login WHERE NAME= ? && PASSWORD= ?";
-    public boolean checkLogin(String uname, String pass) throws SQLException{
-
-        ResultSet rs = null;
+    User user = new User();
+    public User fetchLoginFromDB(String uname, String pass) throws SQLException{
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true","root","1234");
+            Connection con = DatabaseConnection.getConnection();
 
-            System.out.println("I came here 1");
-            PreparedStatement stmt = con.prepareStatement(sql);
-            System.out.println("I came after sql");
+            PreparedStatement stmt = con.prepareStatement("SELECT * FROM tblcustomer WHERE email=? and password=?");
             stmt.setString(1, uname);
-            System.out.println("------");
             stmt.setString(2, pass);
-            System.out.println("I came after name and pass");
-//            ResultSet rs = stmt.executeQuery();
-            rs = stmt.executeQuery(sql);
-            System.out.println("I came here 2");
+            System.out.println(stmt);
+            ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
-                return true;
+                String email = rs.getString("email");
+                String passWORD = rs.getString("password");
+                user = new User(email, passWORD);
             }
         } catch (Exception e) {
-            System.out.printf("connection failed");
+            e.printStackTrace();
         }
-        finally {
-            rs.close();
-        }
-        return false;
+        return user;
     }
+
 }
